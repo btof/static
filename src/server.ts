@@ -6,6 +6,7 @@ import { resolvers } from './graphql/resolvers/index'
 import { typeDefs } from './graphql/typeDefs'
 import { PubSub } from 'graphql-subscriptions'
 import config from './config/config'
+import logger from './logging/logger'
 
 /**
  * @constant PORT - the port the app will run on.
@@ -15,9 +16,8 @@ const app: Application = express()
 export const pubsub = new PubSub()
 
 /**
- * @param schema - the service schema.
- * @param validationRules - since in federation you can get limitless-depth object there is
- * a configured limitation.
+ * @param typeDefs - the types of the graphql
+ * @param resolvers - the resolvers of the graphql
  * @param playground - enable the graphql playground environment.
  */
 const server: ApolloServer = new ApolloServer({
@@ -26,7 +26,7 @@ const server: ApolloServer = new ApolloServer({
 	introspection: true
 })
 
-app.use('*', cors())
+app.use(cors())
 app.use(compression())
 
 server.applyMiddleware({ app })
@@ -36,5 +36,5 @@ server.applyMiddleware({ app })
  * The @constant PORT is defined above.
  */
 app.listen({ port: PORT }, (): void =>
-	console.log(`GraphQL is now running on http://localhost:${PORT}/graphql`)
+	logger.info(`GraphQL is now running on http://localhost:${PORT}/graphql`)
 )

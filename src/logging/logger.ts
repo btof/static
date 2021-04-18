@@ -1,12 +1,15 @@
-const winston = require('winston');
-const LogstashUDP = require('winston-logstash-udp').LogstashUDP;
+const Winston = require('winston');
+const WinstonLogStash = require('winston3-logstash-transport');
 
-export const logger = new (winston.Logger)({
-	transports: [
-		new (LogstashUDP)({
-			port: 9999,
-			appName: 'my application name',
-			host: '127.0.0.1'
-		})
-	]
-});
+const logger = Winston.createLogger();
+
+logger.add(new WinstonLogStash({
+	mode: 'udp',
+	host: '127.0.0.1',
+	applicationName: "app-name",
+	port: 28777
+}));
+
+logger.add(new Winston.transports.Console({ level: "debug" }));
+
+export default logger;

@@ -14,7 +14,7 @@
     "plugins": [
         "@typescript-eslint"
     ],
-    "ignorePatterns": ["src/interfaces/types.ts"],
+    "ignorePatterns": ["src/types/graphql.ts"],
     "rules": {
         "no-extra-semi": "off",
         "eol-last": "off",

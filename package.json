@@ -57,6 +57,7 @@
     "graphql": "^15.4.0",
     "graphql-subscriptions": "^1.1.0",
     "lodash": "^4.17.20",
+    "lru-cache": "^6.0.0",
     "mongodb": "^3.6.3",
     "winston": "^3.3.3",
     "winston3-logstash-transport": "^1.2.3"

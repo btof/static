@@ -56,6 +56,7 @@
     "express": "^4.17.1",
     "graphql": "^15.4.0",
     "graphql-subscriptions": "^1.1.0",
+    "graphql-tools": "^7.0.5",
     "lodash": "^4.17.20",
     "lru-cache": "^6.0.0",
     "mongodb": "^3.6.3",

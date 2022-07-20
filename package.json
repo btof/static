@@ -45,7 +45,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.0.0",
     "husky": "7.0.4",
-    "jsdoc": "3.6.10",
+    "jsdoc": "3.6.11",
     "nodemon": "2.0.19",
     "prettier": "2.7.1",
     "ts-node": "10.9.1",

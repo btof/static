@@ -39,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "5.33.0",
     "@typescript-eslint/parser": "5.33.0",
     "concurrently": "7.3.0",
-    "eslint": "8.21.0",
+    "eslint": "8.22.0",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-node": "11.1.0",

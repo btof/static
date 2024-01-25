@@ -34,7 +34,7 @@
     "@types/lodash": "4.14.202",
     "@types/mongodb": "4.0.6",
     "@types/node": "16.18.75",
-    "@types/nodemon": "1.19.4",
+    "@types/nodemon": "1.19.6",
     "@types/winston": "2.4.4",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",

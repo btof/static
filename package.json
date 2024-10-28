@@ -33,7 +33,7 @@
     "@types/graphql": "14.5.0",
     "@types/lodash": "4.17.7",
     "@types/mongodb": "4.0.7",
-    "@types/node": "16.18.108",
+    "@types/node": "20.17.2",
     "@types/nodemon": "1.19.6",
     "@types/winston": "2.4.4",
     "@typescript-eslint/eslint-plugin": "5.62.0",
